@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function add(){
+           a= document.getElementById("num1").value;
+           b= document.getElementById("num2").value;
+           c= a + b;
+           alert("Addition Of Number " + c) 
+        }
+    </script>
 </head>
 <style>
     form{
@@ -18,18 +26,18 @@
 </style>
 <body>
     <h2><u>Simple Calculator</u></h2>
-   <form>
+   <form id="cal">
        <label>Please Enter First Number</label>
        <input type="text" id="num1">
        <br><br>
        <label >Please Enter Second Number</label>
        <input type="text" id="num2">
        <br><br><br>
-       <input type="submit" value="Add">
-       <input type="submit" value="Sub">
-       <input type="submit" value="Mult">
-       <input type="submit" value="Div">
-       <input type="submit" value="Mod">
+      <button onclick="add()">ADD</button>
+      <button onclick="sub()">Sub</button>
+      <button onclick="mul()">Mul</button>
+      <button onclick="div()">Div</button>
+      <button onclick="mod()">Mod</button>
    </form>
 </body>
 </html>
