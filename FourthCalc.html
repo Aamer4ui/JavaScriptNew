@@ -9,9 +9,36 @@
         function add(){
            a= document.getElementById("num1").value;
            b= document.getElementById("num2").value;
-           c= a + b;
+           c= parseInt (a) + parseInt (b);
            alert("Addition Of Number " + c) 
         }
+        function sub(){
+           a= document.getElementById("num1").value;
+           b= document.getElementById("num2").value;
+           c= parseInt (a) - parseInt (b);
+           alert("Substraction Of Number " + c) 
+        }
+        function mul(){
+           a= document.getElementById("num1").value;
+           b= document.getElementById("num2").value;
+           c= parseInt (a) * parseInt (b);
+           alert("Multiplication Of Number " + c) 
+        }
+        function div(){
+           a= document.getElementById("num1").value;
+           b= document.getElementById("num2").value;
+           c= parseInt (a) / parseInt (b);
+           alert("Division Of Number " + c) 
+        }
+        
+        function mod(){
+           a= document.getElementById("num1").value;
+           b= document.getElementById("num2").value;
+           c= parseInt (a) % parseInt (b);
+           alert("Mod Of Number " + c) 
+        }
+        
+        
     </script>
 </head>
 <style>
@@ -25,6 +52,7 @@
     }
 </style>
 <body>
+    <center>
     <h2><u>Simple Calculator</u></h2>
    <form id="cal">
        <label>Please Enter First Number</label>
@@ -39,5 +67,6 @@
       <button onclick="div()">Div</button>
       <button onclick="mod()">Mod</button>
    </form>
+</center>
 </body>
 </html>
