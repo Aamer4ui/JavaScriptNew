@@ -21,6 +21,9 @@
          document.getElementById("num3").value=c;
          
         }
+        function zero(){
+           document.getElementById("num1").value += value;
+        }
         function sub(){
            a= document.getElementById("num1").value;
            b= document.getElementById("num2").value;
@@ -72,8 +75,9 @@
        padding: 10px;
        border-radius: 10px;
        outline: none;
-       color:white;
-       background: black;
+       color:black;
+       background: rgb(216, 132, 132);
+       box-shadow: 0 0 5px black;
     }
 </style>
 <body>
@@ -88,18 +92,19 @@
        <label type="text" style="color: black;"><b> Total:</b></label>
        <input type="text" name="cal3" id="num3" placeholder="Total">
        <br><br>
-       <button>0</button>
+       
        <button>1</button>
        <button>2</button>
-       <button>3</button>
+       <button>3</button><br>
        <button>4</button>
        <button>5</button>
-       <button>6</button>
+       <button>6</button><br>
        <button>7</button>
        <button>8</button>
-       <button>9</button>
-       
-      <br><br>  
+       <button>9</button><br>
+       <button>*</button>
+      <button onclick="zero()">0</button>
+      <button>#</button><br><br>
       <button onclick="add()">ADD</button>
       <button onclick="sub()">Sub</button>
       <button onclick="mul()">Mul</button>
