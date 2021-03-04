@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function out(x){
+         a= document.getElementById("num1").value;
+         b= document.getElementById("num2").value;
+         if (a == ""){
+            document.getElementById("num1").value = x;
+         }
+         else{
+            document.getElementById("num2").value = x;
+         }
+      }
+</script>
+<style>
+    div{
+        background-color: teal;
+        color: white;
+        width: 600px;
+        height: 500px;
+        border-radius: 30px;
+        padding: 20px;
+        box-shadow: 0 0 10px black;
+    }
+    input{
+       border-radius: 30px;
+       outline: none;
+       border: none;
+       box-shadow: 0 0 10px black;
+       text-align: center;
+       height: 30px;
+    }
+    button{
+       margin: 5px;
+       padding: 10px;
+       border-radius: 50px;
+       outline: none;
+       border: 1px solid black;
+       color:black;
+       background: rgb(216, 132, 132);
+       box-shadow: 0 0 5px black;
+    }
+</style>
+<body>
+    <center>
+        <div>
+     <h2><u>Simple Calculator</u></h2>
+    <!-- <form id="cal"> -->
+        <label style="color: black; font-size: large;"><b> First:-</b></label>
+        <input type="text" name="cal1" id="num1" placeholder="First">
+        <label style="color: black; font-size: large;"><b> Second:-</b></label>
+        <input type="text" name="cal2" id="num2" placeholder="Second"><br><br>
+        <label type="text" style="color: black;"><b> Total:</b></label>
+        <input type="text" name="cal3" id="num3" placeholder="Total">
+        <br><br>
+        
+        <button onclick="out(1)">1</button>
+        <button onclick="out(2)">2</button>
+        <button onclick="out(3)">3</button><br>
+        <button onclick="out(4)">4</button>
+        <button onclick="out(5)">5</button>
+        <button onclick="out(6)">6</button><br>
+        <button onclick="out(7)">7</button>
+        <button onclick="out(8)">8</button>
+        <button onclick="out(9)">9</button><br>
+        <button>=</button>
+       <button onclick="out(0)">0</button>
+       <button>#</button><br><br>
+       <button onclick="add()">+</button>
+       <button onclick="sub()">-</button>
+       <button onclick="mul()">*</button>
+       <button onclick="div()">/</button>
+       <button onclick="mod()">%</button>
+    <!-- </form> -->
+ </div>
+ </center>
+    
+</body>
+</html>
