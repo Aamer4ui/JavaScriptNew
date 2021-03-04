@@ -22,7 +22,7 @@
          
         }
         function zero(){
-           document.getElementById("num1").value += value;
+           document.getElementById("num1").value += 0;
         }
         function sub(){
            a= document.getElementById("num1").value;
@@ -98,15 +98,15 @@
        <input type="text" name="cal3" id="num3" placeholder="Total">
        <br><br>
        
-       <button>1</button>
-       <button>2</button>
-       <button>3</button><br>
-       <button>4</button>
-       <button>5</button>
-       <button>6</button><br>
-       <button>7</button>
-       <button>8</button>
-       <button>9</button><br>
+       <button onclick="one()">1</button>
+       <button onclick="two()">2</button>
+       <button onclick="three()">3</button><br>
+       <button onclick="four()">4</button>
+       <button onclick="five()">5</button>
+       <button onclick="six()">6</button><br>
+       <button onclick="seven()">7</button>
+       <button onclick="eight()">8</button>
+       <button onclick="nine()">9</button><br>
        <button>=</button>
       <button onclick="zero()">0</button>
       <button>#</button><br><br>
