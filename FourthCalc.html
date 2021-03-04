@@ -21,9 +21,20 @@
          document.getElementById("num3").value=c;
          
         }
+
+      //   Zero Function
         function zero(){
-           document.getElementById("num1").value += 0;
-        }
+         a= document.getElementById("num1").value;
+         b= document.getElementById("num2").value;
+         if (a == ""){
+            document.getElementById("num1").value = 0;
+         }
+         else{
+            document.getElementById("num2").value =0;
+         }
+      }
+
+      
         function sub(){
            a= document.getElementById("num1").value;
            b= document.getElementById("num2").value;
