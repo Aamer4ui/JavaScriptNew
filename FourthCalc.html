@@ -28,7 +28,8 @@
            a= document.getElementById("num1").value;
            b= document.getElementById("num2").value;
            c= parseInt (a) - parseInt (b);
-           alert("Substraction Of Number " + c) 
+           document.getElementById("num3").value=c;
+         //   alert("Substraction Of Number " + c) 
         }
         function mul(){
            a= document.getElementById("num1").value;
@@ -72,9 +73,9 @@
        height: 30px;
     }
     button{
-       margin: 10px;
+       margin: 5px;
        padding: 10px;
-       border-radius: 10px;
+       border-radius: 50px;
        outline: none;
        color:black;
        background: rgb(216, 132, 132);
@@ -106,11 +107,11 @@
        <button>*</button>
       <button onclick="zero()">0</button>
       <button>#</button><br><br>
-      <button onclick="add()">ADD</button>
-      <button onclick="sub()">Sub</button>
-      <button onclick="mul()">Mul</button>
-      <button onclick="div()">Div</button>
-      <button onclick="mod()">Mod</button>
+      <button onclick="add()">+</button>
+      <button onclick="sub()">-</button>
+      <button onclick="mul()">*</button>
+      <button onclick="div()">/</button>
+      <button onclick="mod()">%</button>
    <!-- </form> -->
 </div>
 </center>
