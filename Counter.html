@@ -14,11 +14,17 @@
     add += 1;
       document.getElementById("num").value = add;
       sub = add;
+      if (add==20){
+          alert("Max Limit On")
+      }
     }
       function subcount() {
         sub -= 1;
         document.getElementById("num").value = sub ;
         add = sub;
+        if(sub == -20){
+            alert ("Max Limit On")
+        }
       }
   </script>
 <body>
