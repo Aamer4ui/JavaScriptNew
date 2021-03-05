@@ -11,20 +11,22 @@
     var sub = 0;
 
     function count() {
-    add => 1;
-      document.getElementById("num").value = add
+    add += 1;
+      document.getElementById("num").value = add;
+      sub= add;
     }
       function subcount() {
-        sub - 1;
+        sub -= 1;
         document.getElementById("num").value = sub ;
+        add=sub;
       }
   </script>
 <body>
     
-      <button onclick="count()">Add Me</button>
+      <button onclick="count()">+</button>
+      <button onclick="subcount()">-</button>
       <input id="num" type="text" />
-      <br />
-      <br />
-      <button onclick="subcount()">Delete Me</button>
+      
+     
 </body>
 </html>
