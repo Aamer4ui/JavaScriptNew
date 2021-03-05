@@ -6,8 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discount</title>
 </head>
+<script>
+    function myDisc(){
+    d=document.getElementById("num1").value;
+    if (d<10){
+        document.getElementById("print").innerHTML="You Have Get 10% Disc."
+    }
+    else if (d>10 && d<=20){
+        document.getElementById("print").innerHTML="You Have Get 20% Disc."
+    }
+    else if (d>10 && d<=50){
+        document.getElementById("print").innerHTML="You Have Get 50% Disc."
+    }
+    else{
+        document.getElementById("print").innerHTML="You Have Get 100% Disc."
+
+    }
+}
+</script>
 <body>
-    
+    <input type="text" name="" id="num1">
+    <button onclick="myDisc()"> Submit</button>
+    <p id="print"></p>
+
     
 </body>
 </html>
