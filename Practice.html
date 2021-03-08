@@ -8,17 +8,18 @@
 </head>
 <script>
     function msg(){
-        d=document.getElementById("condition").value;
-        if (0<10){
-            alert("hello")
+        d=document.getElementById("cond").value;
+        if (d<10){
+            document.getElementById("val").innerHTML="You'r in IF Condition";
         }
     }
 </script>
 <body>
     
     
-    <input type="text" id="conition">
-    <button onclick="msg()"></button>
+    <input type="text" id="cond">
+    <button onclick="msg()">hiiii</button>
+    <h2 id="val"></h2>
     
 </body>
 </html>
