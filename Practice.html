@@ -9,8 +9,23 @@
 <script>
     function msg(){
         d=document.getElementById("cond").value;
+        // alert("hello "+ d)
+        
         if (d<10){
-            document.getElementById("val").innerHTML="You'r in IF Condition";
+            document.getElementById("val1").innerHTML="You'r in IF Condition";
+        }
+        if (d<20){
+            document.getElementById("val2").innerHTML="You'r in 20 Condition";
+            
+        }
+        if (d<30){
+            document.getElementById("val3").innerHTML="You'r in 30 Condition";
+        }
+        if (d<40){
+            document.getElementById("val4").innerHTML="You'r in 40 Condition";
+        }
+        if (d<50){
+            document.getElementById("val5").innerHTML="You'r in 50 Condition";
         }
     }
 </script>
@@ -19,7 +34,11 @@
     
     <input type="text" id="cond">
     <button onclick="msg()">hiiii</button>
-    <h2 id="val"></h2>
+    <h2 id="val1"></h2>
+    <h2 id="val2"></h2>
+    <h2 id="val3"></h2>
+    <h2 id="val4"></h2>
+    <h2 id="val5"></h2>
     
 </body>
 </html>
