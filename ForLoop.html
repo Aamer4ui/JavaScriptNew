@@ -10,24 +10,25 @@
     <script>
         function forlo(){
     // var numbring=prompt("enter any number");
-    var x= document.getElementById ("btn")
-    // for(  a=1; a<=10; a++)
-    // {
-    // document.write(numbring + "*" + a +"=" + (a*numbring) + "<br/>");
-    // }
+    var x= document.getElementById ("click").value;
+    for(  a=1; a<=10; a++) // 10 tak ke pahade ke waste ye  number liye apun ne
+    {
+    document.write(x + "*" + a +"=" + (a*x) + "<br/>");
+    }
     //  var x=3;
     // while (x<20 ){
     //     document.write("you are in while conditon");
     //     x--;
     // }
 
-    for (a=1; a<=15; a++){
-        document.write( a)
-    }
+    // for (a=1; a<=15; a++){
+    //     document.write( a)
+    // }
 }
     
     
 </script>
+<input  id="click" type="text">
 <button id="btn" onclick="forlo()">Print</button>
 </body>
 </html>
