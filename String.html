@@ -9,14 +9,16 @@
 
 <script>
     function method(){
-        var aamer= "Sohel"
+        var aamer= "Sohel Bhai"
         document.getElementById("method").innerHTML=aamer.length;
+        document.getElementById ("method").innerHTML=aamer.indexOf("B")
     }
 </script>
 <body>
     <input type="text" >
     <button onclick="method()">Enter String</button>
     <p id="method"></p>
+   
     
 </body>
 </html>
