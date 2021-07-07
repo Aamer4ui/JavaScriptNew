@@ -7,32 +7,37 @@
     <title>Tic Toe</title>
 </head>
 <script>
-    function ticToe(me){
-        var Tic = document.getElementById(me);
+    function ticToe(id){
+        var Tic = document.getElementById(id);
     }
 </script>
+<style>
+    span{
+        color: blue;
+        font-size: 30x;
+    }
+    table{
+        border: double 2px red;
+    }
+    </style>
 <body>
 
-    <table border="2">
+    <table border="2" >
         <tr>
-            <td><span onclick="ticToe('11')" id="11" style="color: blue;">YES</span></td>
-            <td><span onclick="ticToe('12')" id="12" style="color: blue;">YES</span></td>
-            <td><span onclick="ticToe('13')" id="13" style="color: blue;">YES</span></td>
-            
+            <td><span onclick="ticToe('11')" id="11"  >YES</span></td>
+            <td><span onclick="ticToe('12')" id="12" >YES</span></td>
+            <td><span onclick="ticToe('13')" id="13"  >YES</span></td>  
         </tr>
         <tr>
-            <td><span onclick="ticToe('21')" id="21" style="color: blue;">YES</span></td>
-            <td><span onclick="ticToe('22')" id="22" style="color: blue;">YES</span></td>
-            <td><span onclick="ticToe('23')" id="23" style="color: blue;">YES</span></td>
-            
+            <td><span onclick="ticToe('21')" id="21"   > YES</span></td>
+            <td><span onclick="ticToe('22')" id="22"  >YES</span></td>
+            <td><span onclick="ticToe('23')" id="23"  >YES</span></td>  
         </tr>
         <tr>
-            <td><span onclick="ticToe('31')" id="31" style="color: blue;">YES</span></td>
-            <td><span onclick="ticToe('32')" id="32" style="color: blue;">YES</span></td>
-            <td><span onclick="ticToe('33')" id="33" style="color: blue;">YES</span></td>
-            
+            <td><span onclick="ticToe('31')" id="31"  >YES</span></td>
+            <td><span onclick="ticToe('32')" id="32"  >YES</span></td>
+            <td><span onclick="ticToe('33')" id="33"  >YES</span></td>
         </tr>
-       
     </table>
     
 </body>
