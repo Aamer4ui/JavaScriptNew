@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Registration</title>
+</head>
+<script>
+    function setValues() {
+        var nData = document.getElementById("name");
+        var pData = document.getElementById("pass");
+        var colData = document.getElementById("pickcol");
+
+        sessionStorage.setItem("userName", nData.value);
+        sessionStorage.setItem("userPassword", pData.value);
+        sessionStorage.setItem("FavColor", colData.value);
+
+    }
+
+    function getValue() {
+        // var nData = document.getElementById ("name");
+        // var pData = document.getElementById("pass");
+        var colData = document.getElementById("pickcol");
+        var colPic = document.getElementById("jadu");
+        // var bodData = document.getElementById("jadu");
+        // nData.value=sessionStorage.getItem ("userName");
+        // pData.value=sessionStorage.getItem("userPassword");
+        colData.value = sessionStorage.getItem("FavColor");
+        colPic.style = `background-color:${sessionStorage.getItem("FavColor")}`
+
+    }
+</script>
+
+<body>
+    <nav>
+        <a href="./Index.html">Home</a>
+        <a href="./Registraion.html">Registration</a>
+        <a href="./Product.html">Product</a>
+        <a href="./Aboutus.html">About Us</a>
+        <a href="./Contactus.html">Contact Us</a>
+        <input class="search" type="text">
+    </nav>
+    <h1>Registration Here</h1>
+
+
+    <form id="jadu">
+        <h2>Registration</h2>
+        <br><br>
+
+        <label class="labname">Name</label>
+        <br>
+        <input id="name" type="text">
+        <br>
+        <label>Password</label>
+        <br>
+        <input id="pass" type="password">
+        <br>
+        <label>Confirm Password</label>
+        <br>
+        <input id="conpass" type="password">
+        <br>
+        <label for="">Select Gender</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <br>
+        <label for="">Select Hobbies</label>
+        <input type="checkbox" value="Eating">Eating
+        <input type="checkbox" value="Coding">Coding
+        <input type="checkbox" value="Sleeping">Sleeping
+
+        <label for="">Your Fav. Form Color</label>
+        <input type="color" name="" id="pickcol">
+
+        <br><br>
+        <button onclick="setValues()">Submit</button>
+        <button>Cancel</button>
+    </form>
+    <div class="para">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique labore eum consequatur hic totam! Illo
+            blanditiis, adipisci saepe, enim hic, nostrum et quibusdam ut natus officia autem odio maiores ad? At, fugit
+            ad. Cupiditate culpa exercitationem sequi ut voluptatibus dolorem? Itaque consequuntur incidunt id fuga quae
+            ducimus illum similique sapiente sed? Voluptatibus omnis ex atque aut illo, rem neque quae cupiditate
+            quisquam accusamus ratione? Excepturi dolores expedita reprehenderit accusantium eum libero, optio ipsam
+            repellat. Reiciendis quae, harum quod sed magni doloribus corrupti nesciunt consequuntur fugit debitis quasi
+            nemo deleniti perferendis, dicta nobis distinctio dolor. Sequi maxime hic laborum. Illum, a.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique labore eum consequatur hic totam! Illo
+            blanditiis, adipisci saepe, enim hic, nostrum et quibusdam ut natus officia autem odio maiores ad? At, fugit
+            ad. Cupiditate culpa exercitationem sequi ut voluptatibus dolorem? Itaque consequuntur incidunt id fuga quae
+            ducimus illum similique sapiente sed? Voluptatibus omnis ex atque aut illo, rem neque quae cupiditate
+            quisquam accusamus ratione? Excepturi dolores expedita reprehenderit accusantium eum libero, optio ipsam
+            repellat. Reiciendis quae, harum quod sed magni doloribus corrupti nesciunt consequuntur fugit debitis quasi
+            nemo deleniti perferendis, dicta nobis distinctio dolor. Sequi maxime hic laborum. Illum, a
+        </p>
+    </div>
+</body>
+<script>
+    getValue()
+</script>
+
+</html>

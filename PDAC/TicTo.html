@@ -7,8 +7,24 @@
     <title>Tic Toe</title>
 </head>
 <script>
+    var player=1;
     function ticToe(id){
         var Tic = document.getElementById(id);
+        var play= document.getElementById("player");
+        if(player==1){
+            Tic.style="color:black;, font-size:30px;";
+            play.style="color:green;, font-size:30px;";
+            Tic.innerHTML="ME"
+            player=2; 
+            
+        }else{
+            Tic.style="color:red;, font-size:30px;";
+            play.style="color:brown;, font-size:30px;";
+            Tic.innerHTML="HE"
+            player=1;
+        }
+        play.innerHTML="Palyer"+ player;
+        
     }
 </script>
 <style>
@@ -17,10 +33,16 @@
         font-size: 30x;
     }
     table{
-        border: double 2px red;
+        border: double 2px rgb(233, 9, 184);
+    }
+    h1{
+        color: darkgoldenrod;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
     }
     </style>
 <body>
+    <h1 id="player">Player 1</h1>
 
     <table border="2" >
         <tr>
