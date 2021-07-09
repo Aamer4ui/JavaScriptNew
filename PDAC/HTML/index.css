@@ -26,6 +26,7 @@ float: right;
 .search{
     float: right;
     margin: 0;
+    padding: 5px;
 }
 
 form{
