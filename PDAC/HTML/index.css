@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-image: url(../src/background-4326353_1920.jpg);
+    background-attachment: fixed;
+}
 a{
 padding: 10px;
 color: white;
@@ -18,19 +22,29 @@ padding: 20px;
 position: sticky;
 top: 0;
 }
+
 /* input{
 float: right;
 } */
+
+/*-------------Home------ */
+.homelevel{
+   width: 100%;
+   height: 100%;
+}
 
 /*-----------------Reg------------------- */
 .search{
     float: right;
     margin: 0;
     padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
 }
 
 form{
-    background-color: lightslategray;
+    box-shadow: 0 0 10px black;
     margin: auto;  
     margin-top: 20px; 
     width: 400px;
@@ -62,9 +76,10 @@ input{
 }
 h2{
     text-align: center;
+    border-radius: 5px;
     border-bottom: double 3px black;
     width: fit-content;
-    background-color: white;
+    box-shadow: 0 0 10px black;
     width: 100%;
 }
 button{
